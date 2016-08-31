@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			table, th, td {
+				border: 1px solid black; 
+				border-collapse: collapse;
+				border-spacing: 0pt;
+				}
+			table {
+				margin-top: 5px;
+				magin-bottom: 5px;
+			}
+			body {border: 1px solid black}
+			.content {margin: 5px 5px 5px 5px;}
+		</style>
+    </head>
+    <body>
+		<div class="content">
+			Name: %name% <br>
+			Beschreibung: %description% <br>
+			
+			<table>
+				<tr>
+					<td>Typ: %type%</td>
+					<td>Anzahl: %count%</td>
+					<td>Kosten: %cost% (%costSingle%)</td>
+				</tr>
+				<tr>
+					<td>Kapazität: %capacity% (%capacitySingle%)</td>
+					<td>Ration: %ration%</td>
+					<td>Bewegung: %movement%</td>
+				</tr>
+				<tr>
+					<td>Gesundheit: %health% (%healthSingle%)</td>
+					<td>Resistenz: %resistance% (%resistanceSingle%)</td>
+					<td>Eroberung: %conquer% (%conquerSingle%)</td>
+				</tr>
+			</table>
+		</div>
+    </body>
+</html>

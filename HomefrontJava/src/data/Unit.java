@@ -12,7 +12,8 @@ public class Unit {
 	private int health;
 	private int resistance;
 	private int conquer;
-	
+	private Weapon weapon;
+
 	//getter setter
 	public String getName() {
 		return Name;
@@ -49,6 +50,12 @@ public class Unit {
 	}
 	public void setMovement(int movement) {
 		this.movement = movement;
+	}
+	public Weapon getWeapon() {
+		return weapon;
+	}
+	public void setWeapon(Weapon weapon) {
+		this.weapon = weapon;
 	}
 	public int getResistance() {
 		return resistance*count;
@@ -96,7 +103,7 @@ public class Unit {
 	 * @param conquer
 	 */
 	public Unit(String name, String description, UnitType type, int count, int cost, int capacity, int ration,
-			int movement, int health, int resistance, int conquer) {
+			int movement, int health, int resistance, int conquer, Weapon weapon) {
 		super();
 		Name = name;
 		Description = description;
@@ -109,6 +116,12 @@ public class Unit {
 		this.health = health;
 		this.resistance = resistance;
 		this.conquer = conquer;
+		this.weapon = weapon;
+	}
+	
+	@Deprecated
+	public Unit() {
+		
 	}
 	
 	
